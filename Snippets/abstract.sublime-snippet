@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[abstract ${1:abstractName} (${2: })
+begin
+	// $1 variables
+	${3: }
+	
+	{inv ${4:true} inv}
+
+	// $1 procedures
+	${5: }
+end
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>abstract</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.graciela</scope>
+</snippet>
