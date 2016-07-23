@@ -38,7 +38,7 @@
 			<key>comment</key>
 			<string>Operator</string>
 			<key>match</key>
-			<string>([-*=+!&lt;&gt;≥≡≢≠≤∧¬≔\\∪∩]|:|:=|/\\|\\/|-&gt;|→|\(%|%\)|\||\[|\]|∈|∉|[\[\]])</string>
+			<string>([-*=+!&lt;&gt;≥≡≢≠≤∧¬≔∪∩]|:|:=|/\\|\\/|\\|-&gt;|→|\(%|%\)|\||\[|\]|∈|∉|[\[\]])</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -95,6 +95,16 @@
 			<string>C++ style one-line comment</string>
 			<key>end</key>
 			<string>$\n?</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>comment</key>
+			<string>C++ style block comment</string>
+			<key>end</key>
+			<string>\*/</string>
 			<key>name</key>
 			<string>comment.line</string>
 		</dict>
