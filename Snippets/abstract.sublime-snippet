@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[abstract ${1:abstractName} (${2: })
 begin
-	// $1 variables
+	/* $1 variables */
 	${3: }
 	
 	{inv ${4:true} inv}
 
-	// $1 procedures
+	/* $1 procedures */
 	${5: }
 end
 ]]></content>

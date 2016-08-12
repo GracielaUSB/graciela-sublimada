@@ -1,14 +1,14 @@
 <snippet>
 	<content><![CDATA[type ${1:typeName} implements ${2:abstractName} (${3: })
 begin
-	// $1 variables
+	/* $1 variables */
 	${4: }
 	
 	{repinv ${5:true} repinv}
 
 	{coupinv ${6:true} coupinv}
 
-	// $1 procedures
+	/* $1 procedures */
 	${7: }
 end
 ]]></content>
