@@ -38,7 +38,7 @@
 			<key>comment</key>
 			<string>Operator</string>
 			<key>match</key>
-			<string>([-*=+!&lt;&gt;≥≡≢≠≤∧¬≔∪∩]|:|:=|/\\|\\/|\\|-&gt;|→|\(%|%\)|\||\[|\]|∈|∉|[\[\]])</string>
+			<string>([-*=+!&lt;&gt;≥≡≢≠≤∧¬≔∪∩]|:|:=|/\\|\\/|\\|-&gt;|→|\(%|%\)|√|\||\[|\]|∈|∉|[\[\]])</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -46,7 +46,7 @@
 			<key>comment</key>
 			<string>Text Operator</string>
 			<key>match</key>
-			<string>(sqrt|elem|union|intersect)</string>
+			<string>\b(sqrt|abs|max|min|elem|union|intersect|null)\b</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -112,7 +112,7 @@
 			<key>comment</key>
 			<string>Builtin waves</string>
 			<key>match</key>
-			<string>\b(int|array|char|boolean|string|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|sequence|function|relation|tuple)\b</string>
+			<string>\b(int|array|float|char|boolean|string|free|new|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|sequence|function|relation|tuple)\b</string>
 			<key>name</key>
 			<string>storage.type</string>
 		</dict>

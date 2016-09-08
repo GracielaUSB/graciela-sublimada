@@ -1,10 +1,15 @@
 <snippet>
-	<content><![CDATA[func ${1:funcName} (${2: }) -> ${3: }
-begin
-	// hols
-end]]></content>
+	<content><![CDATA[proc ${1:name} (${2: })
+
+	{pre ${3:true} pre}
+	{post ${4:true} post}
+	|[
+
+	]|
+
+]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>func</tabTrigger>
+	<tabTrigger>proc</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.graciela</scope>
 </snippet>
