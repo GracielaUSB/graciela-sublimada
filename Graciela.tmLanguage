@@ -112,7 +112,7 @@
 			<key>comment</key>
 			<string>Builtin waves</string>
 			<key>match</key>
-			<string>\b(int|array|char|boolean|string|write|writeln|true|false|of|read|random|skip|abort|set|sequence|function|relation|tuple)\b</string>
+			<string>\b(int|array|char|boolean|string|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|sequence|function|relation|tuple)\b</string>
 			<key>name</key>
 			<string>storage.type</string>
 		</dict>
