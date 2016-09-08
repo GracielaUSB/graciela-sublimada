@@ -1,8 +1,12 @@
 <snippet>
 	<content><![CDATA[func ${1:funcName} (${2: }) -> ${3: }
-begin
+	{pre ${4: true} pre}
+	{post ${5: true} post}
+	|[
+		
+	]|
 	// hols
-end]]></content>
+]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>func</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

@@ -1,12 +1,11 @@
 <snippet>
-	<content><![CDATA[proc ${1:name} (${2: }) begin
+	<content><![CDATA[proc ${1:name} (${2: })
 
 	{pre ${3:true} pre}
+	{post ${4:true} post}
 	|[
 
 	]|
-	{post ${4:true} post}
-end
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
