@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[if ${1: } -> ${2: }
-[] ${3: } -> ${4: }
-fi
+	 [] ${3:otherwise} -> ${4:skip}
+	 fi
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>if </tabTrigger>

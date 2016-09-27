@@ -1,15 +1,15 @@
 <snippet>
-	<content><![CDATA[type ${1:typeName} implements ${2:abstractName} (${3: })
+	<content><![CDATA[type ${1:typeName}(${2:}) implements ${3:abstractName}(${4: })
 begin
 	/* $1 variables */
-	${4: }
+	${5: }
 	
-	{repinv ${5:true} repinv}
+	{repinv ${6:true} repinv}
 
-	{coupinv ${6:true} coupinv}
+	{coupinv ${7:true} coupinv}
 
 	/* $1 procedures */
-	${7: }
+	${8: }
 end
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

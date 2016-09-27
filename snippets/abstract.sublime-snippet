@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[abstract ${1:abstractName} (${2: })
+	<content><![CDATA[abstract ${1:abstractName}(${2: })
 begin
 	/* $1 variables */
 	${3: }
