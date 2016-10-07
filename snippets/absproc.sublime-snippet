@@ -1,9 +1,10 @@
 <snippet>
+	<description>abstract procedure</description>
 	<content><![CDATA[proc ${1:name} (${2: })
 	{pre ${3:true} pre}
 	{post ${4:true} post}
 
-]]></content>
+	]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>absproc</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

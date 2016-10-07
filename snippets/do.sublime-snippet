@@ -1,9 +1,10 @@
 <snippet>
+	<description>do loop</description>
 	<content><![CDATA[{inv ${1: } inv}
-	{bound ${2: } bound}
-	do ${3: } ->
-		${4: }
-	od
+{bound ${2: } bound}
+do ${3: } ->
+	${4: }
+od
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>do</tabTrigger>

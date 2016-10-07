@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[func ${1:funcName} (${2: }) -> ${3: }
-	{pre ${4: true} pre}
-	{post ${5: true} post}
-	|[
-		
-	]|
-]]></content>
+{pre ${4: true} pre}
+{post ${5: true} post}
+{bound ${6: i} bound}
+|[
+	
+]|]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>func</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

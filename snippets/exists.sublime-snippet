@@ -1,4 +1,5 @@
 <snippet>
+	<description>existential quantification</description>
 	<content><![CDATA[(% exist ${1:i} : int | ${2:0} <= $1 /\ $1 <= ${3:n} | ${4: } %)]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>exist</tabTrigger>

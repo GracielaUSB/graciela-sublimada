@@ -14,7 +14,7 @@
 			<key>comment</key>
 			<string>Keywords and instructions</string>
 			<key>match</key>
-			<string>\b(abstract|program|begin|do|end|exist|∃|notexist|∄|forall|∀|sigma|∑|pi|∏|if|fi|implements|in|inout|od|out|proc|func|return|type)\b</string>
+			<string>\b(abstract|program|begin|do|end|exist|∃|notexist|∄|forall|∀|sum|∑|product|∏|if|fi|implements|in|inout|od|out|proc|func|return|type)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -30,7 +30,7 @@
 			<key>comment</key>
 			<string>Numeric literal</string>
 			<key>match</key>
-			<string>\b((([0-9]+\.?[0-9]*)|(\.[0-9]+))(n|f)?|([0-9]+(n|f)[0-9]*))?\b</string>
+			<string>\b((([0-9]+\.?[0-9]*)|(\.[0-9]+))(n|f)?|([0-9]+(n|f)[0-9]*))?|pi|tau|π|τ|MAX_INT|MIN_INT\b</string>
 			<key>name</key>
 			<string>constant.numeric</string>
 		</dict>
