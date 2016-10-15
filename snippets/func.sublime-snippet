@@ -3,7 +3,7 @@
 	{pre ${4: true} pre}
 	{post ${5: true} post}
 	|[
-		
+		${6:expression}
 	]|
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

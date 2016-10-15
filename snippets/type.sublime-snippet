@@ -6,9 +6,9 @@ begin
 	
 	{repinv ${6:true} repinv}
 
-	{coupinv ${7:true} coupinv}
+	where { ${7:true} }
 
-	/* $1 procedures */
+	/* $1 procedures and functions */
 	${8: }
 end
 ]]></content>

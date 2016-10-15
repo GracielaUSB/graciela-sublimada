@@ -14,7 +14,7 @@
 			<key>comment</key>
 			<string>Keywords and instructions</string>
 			<key>match</key>
-			<string>\b(abstract|program|begin|do|end|exist|∃|notexist|∄|forall|∀|sigma|∑|pi|∏|if|fi|implements|in|inout|od|out|proc|func|return|type)\b</string>
+			<string>\b(abstract|program|where|begin|do|end|exist|∃|notexist|∄|forall|∀|sigma|∑|pi|П|if|fi|implements|in|inout|od|out|proc|func|return|type)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -22,7 +22,7 @@
 			<key>comment</key>
 			<string>Symbolic Keywords</string>
 			<key>match</key>
-			<string>([∃∄∀∑∏]|\[\])</string>
+			<string>([∃∄∀ΣΠ]|\[\])</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -38,7 +38,7 @@
 			<key>comment</key>
 			<string>Operator</string>
 			<key>match</key>
-			<string>([-*=+!&lt;&gt;≥≡≢≠≤∧¬≔∪∩|]|:|:=|/\\|\\/|\\|-&gt;|→|\(%|%\)|√|\||\[|\]|∈|∉|[\[\]])</string>
+			<string>([-*=+!&lt;&gt;≥≡≢≠≤∧¬≔∪∩⊃⊆⊇⊂#@|]|:|:=|∅|/\\|\\/|\\|-&gt;|→|\(%|%\)|√|\||\[|\]|∈|∉|[\[\]])</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -46,7 +46,7 @@
 			<key>comment</key>
 			<string>Text Operator</string>
 			<key>match</key>
-			<string>\b(sqrt|abs|max|min|elem|union|intersect|null)\b</string>
+			<string>\b(sqrt|abs|max|min|elem|msum|subset|ssubset|superset|ssuperset|concat|union|intersect|null)\b</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -89,7 +89,7 @@
 		</dict>
 
 
-		<dict>
+<!-- 		<dict>
 			<key>begin</key>
 			<string>\'</string>
 			<key>beginCaptures</key>
@@ -125,7 +125,7 @@
 			</array>
 			<key>string_escaped_char</key>
 			<false/>
-		</dict>
+		</dict> -->
 
 		<dict>
 			<key>begin</key>
@@ -151,15 +151,23 @@
 			<key>comment</key>
 			<string>Builtin waves</string>
 			<key>match</key>
-			<string>\b(int|array|float|char|boolean|string|free|new|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|sequence|function|relation|tuple)\b</string>
+			<string>\b(int|array|float|char|boolean|string|free|new|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|seq|func|rel|domain|codomain)\b</string>
 			<key>name</key>
 			<string>storage.type</string>
+		</dict>
+	  <dict>
+			<key>comment</key>
+			<string>Operator</string>
+			<key>match</key>
+			<string>([\/])</string>
+			<key>name</key>
+			<string>keyword.operator</string>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Builtin waves</string>
 			<key>match</key>
-			<string>(var|const|[\{]+(pre|post|inv|a|bound|repinv|coupinv)|(pre|post|inv|a|bound|repinv|coupinv)[\}]+|[{}〈〉⟅⟆])</string>
+			<string>(var|const|[\{]+(pre|post|inv|bound|repinv|coupinv)|(pre|post|inv|bound|repinv|coupinv)[\}]+|[{}〈〉⟅⟆])</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
