@@ -1,13 +1,8 @@
 <snippet>
-	<content><![CDATA[program ${1:Program} begin
-main
-	|[
-
-	]|
-end
-]]></content>
+	<description>sum quantification</description>
+	<content><![CDATA[(% sum ${1:i} : int | ${2:0} <= $1 /\ $1 <= ${3:n} | ${4: } %)]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>program</tabTrigger>
+	<tabTrigger>sum</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.graciela</scope>
 </snippet>
