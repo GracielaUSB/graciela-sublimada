@@ -30,7 +30,15 @@
 			<key>comment</key>
 			<string>Numeric literal</string>
 			<key>match</key>
-			<string>\b((([0-9]+\.?[0-9]*)|(\.[0-9]+))(n|f)?|([0-9]+(n|f)[0-9]*))?|pi|tau|π|τ|MAX_INT|MIN_INT\b</string>
+			<string>\b((([0-9]+\.?[0-9]*)|(\.[0-9]+))(n|f)?|([0-9]+(n|f)[0-9]*))?\b</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Numeric constant</string>
+			<key>match</key>
+			<string>\b(pi|tau|π|τ|MAX_INT|MIN_INT)\b</string>
 			<key>name</key>
 			<string>constant.numeric</string>
 		</dict>
