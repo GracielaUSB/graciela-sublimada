@@ -96,10 +96,9 @@
 			<false/>
 		</dict>
 
-
 		<dict>
 			<key>begin</key>
-			<string>\'</string>
+			<string>[^A-Za-z0-9\?\'_]\'</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
@@ -108,8 +107,7 @@
 					<string>punctuation.definition.string.begin</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>String literal</string>
+			<key>comment</key> <string>String literal</string>
 			<key>end</key>
 			<string>\'</string>
 			<key>endCaptures</key>
