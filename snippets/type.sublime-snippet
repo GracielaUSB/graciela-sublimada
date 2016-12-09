@@ -6,7 +6,7 @@ begin
 	
 	{repinv ${6:true} repinv}
 
-	where { ${7:true} }
+	{coupinv ${7:true} coupinv}
 
 	/* $1 procedures and functions */
 	${8: }
