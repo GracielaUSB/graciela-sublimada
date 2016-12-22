@@ -10,11 +10,31 @@
 	<string>Graciela</string>
 	<key>patterns</key>
 	<array>
+		
+
+		<dict>
+			<key>comment</key>
+			<string>Builtin waves</string>
+			<key>match</key>
+			<string>\b(var|const|[{}〈〉⟅⟆])\b</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		
+		<dict>
+			<key>comment</key>
+			<string>Builtin waves</string>
+			<key>match</key>
+			<string>(&lt;&lt;|&gt;&gt;|[\{]+(pre\b|post\b|inv\b|bound\b|repinv\b|coupinv\b|:)|(\bpre|\bpost|\binv|\bbound|\brepinv|\bcoupinv|:)[\}]+|⟨|⟩|[{}⟅⟆])</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+
 		<dict>
 			<key>comment</key>
 			<string>Keywords and instructions</string>
 			<key>match</key>
-				<string>\b(abstract|program|begin|do|end|exist|notexist|forall|sum|product|count|if|fi|implements|in|inout|od|out|proc|func|return|where|type|ref)\b</string>
+			<string>\b(abstract|program|begin|do|end|where|exist|notexist|forall|sum|product|count|if|fi|implements|in|inout|od|out|ref|proc|func|let|rel|return|type)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -54,7 +74,7 @@
 			<key>comment</key>
 			<string>Text Operator</string>
 			<key>match</key>
-			<string>\b(sqrt|abs|max|min|elem|msum|subset|ssubset|superset|ssuperset|concat|union|intersect|null)\b</string>
+			<string>\b(sqrt|abs|max|min|elem|notelem|msum|subset|ssubset|superset|ssuperset|concat|union|intersect|null)\b</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -158,7 +178,7 @@
 			<key>comment</key>
 			<string>Builtin waves</string>
 			<key>match</key>
-			<string>\b(int|array|float|char|boolean|string|free|new|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|multiset|sequence|function|relation|domain|codomain)\b</string>
+			<string>\b(int|array|float|char|boolean|string|free|new|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|multiset|sequence|function|relation|domain|codomain|size|sizeof|toInt|toFloat|toChar)\b</string>
 			<key>name</key>
 			<string>storage.type</string>
 		</dict>
@@ -170,19 +190,21 @@
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
+		
 		<dict>
 			<key>comment</key>
 			<string>Builtin waves</string>
 			<key>match</key>
-			<string>(var|const|[\{]+(pre|post|inv|bound|repinv|coupinv)|(pre|post|inv|bound|repinv|coupinv)[\}]+|[{}〈〉⟅⟆])</string>
+			<string>(⟦|⟧|)</string>
 			<key>name</key>
-			<string>entity.name.function</string>
+			<string>keyword</string>
 		</dict>
+
 		<dict>
 			<key>comment</key>
 			<string>Braces, brackets, parentheses...</string>
 			<key>match</key>
-			<string>([\(\)\{\}⟦⟧\[\]])</string>
+			<string>([\(\)\{\}\[\]])</string>
 			<key>name</key>
 			<string>punctuation.separator.parameters.c</string>
 		</dict>
