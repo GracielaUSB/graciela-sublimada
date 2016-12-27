@@ -10,6 +10,28 @@
 	<string>Graciela</string>
 	<key>patterns</key>
 	<array>
+		
+		<dict>
+			<key>begin</key>
+			<string>(#!|//)</string>
+			<key>comment</key>
+			<string>C++ style one-line comment</string>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>comment</key>
+			<string>C++ style block comment</string>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+
 		<dict>
 			<key>comment</key>
 			<string>Builtin waves</string>
@@ -139,27 +161,6 @@
 			</array>
 			<key>string_escaped_char</key>
 			<false/>
-		</dict>
-
-		<dict>
-			<key>begin</key>
-			<string>//</string>
-			<key>comment</key>
-			<string>C++ style one-line comment</string>
-			<key>end</key>
-			<string>$\n?</string>
-			<key>name</key>
-			<string>comment.line</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>/\*</string>
-			<key>comment</key>
-			<string>C++ style block comment</string>
-			<key>end</key>
-			<string>\*/</string>
-			<key>name</key>
-			<string>comment.line</string>
 		</dict>
 		<dict>
 			<key>comment</key>
