@@ -84,7 +84,7 @@
 			<key>comment</key>
 			<string>Text Operator</string>
 			<key>match</key>
-			<string>\b(sqrt|abs|max|div|mod|min|elem|union|intersect|null)\b</string>
+			<string>\b(sqrt|abs|max|div|mod|min|elem|notelem|union|msum|intersect|null)\b</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
