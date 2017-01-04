@@ -1,0 +1,12 @@
+<snippet>
+	<description>main program</description>
+	<content><![CDATA[main
+	|[ ${1:var x : int }
+	 ; ${2:skip }
+	]|
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>main</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.graciela</scope>
+</snippet>

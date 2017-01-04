@@ -55,7 +55,7 @@
 			<key>comment</key>
 			<string>Keywords and instructions</string>
 			<key>match</key>
-			<string>\b(abstract|program|begin|do|end|where|exist|notexist|forall|sum|product|count|if|fi|implements|in|inout|od|out|ref|proc|func|rel|return|type)\b</string>
+			<string>\b(abstract|program|main|begin|do|end|where|exist|notexist|forall|sum|product|count|if|fi|implements|in|inout|od|out|ref|proc|func|rel|return|type)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
