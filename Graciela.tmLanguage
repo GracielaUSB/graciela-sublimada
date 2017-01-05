@@ -10,7 +10,7 @@
 	<string>Graciela</string>
 	<key>patterns</key>
 	<array>
-		
+
 		<dict>
 			<key>begin</key>
 			<string>(#!|//)</string>
@@ -32,6 +32,16 @@
 			<string>comment.line</string>
 		</dict>
 
+
+		<dict>
+			<key>comment</key>
+			<string>Builtin waves</string>
+			<key>match</key>
+			<string>\b(var|const|let|[{}〈〉⟅⟆])\b</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		
 		<dict>
 			<key>comment</key>
 			<string>Builtin waves</string>
@@ -48,6 +58,7 @@
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
+
 		<dict>
 			<key>comment</key>
 			<string>Keywords and instructions</string>
@@ -60,7 +71,7 @@
 			<key>comment</key>
 			<string>Symbolic Keywords</string>
 			<key>match</key>
-			<string>([#∃∄∀∑∏]|\[\])</string>
+				<string>([∃∄∀ΣΠ]|\[\])</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -84,7 +95,7 @@
 			<key>comment</key>
 			<string>Operator</string>
 			<key>match</key>
-			<string>([-*=+!&lt;&gt;≥≡≢≠≤∧¬≔∪∩|]|:|:=|/\\|\\/|\\|-&gt;|→|\(%|%\)|√|\||\[|\]|∈|∉|[\[\]])</string>
+			<string>([-*=+!&lt;&gt;≥≡≢≠≤∧¬≔∪∩⊃⊆⊇⊂#@|]|:|:=|∅|/\\|\\/|\\|-&gt;|→|\(%|%\)|√|\||\[|\]|∈|∉|[\[\]])</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -92,7 +103,7 @@
 			<key>comment</key>
 			<string>Text Operator</string>
 			<key>match</key>
-			<string>\b(sqrt|abs|max|div|mod|min|elem|notelem|union|msum|intersect|null)\b</string>
+			<string>\b(sqrt|abs|max|min|elem|notelem|msum|subset|ssubset|superset|ssuperset|concat|union|intersect|null)\b</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -135,54 +146,36 @@
 		</dict>
 
 		<dict>
-			<key>begin</key>
-			<string>[^A-Za-z0-9\?\'_]\'</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin</string>
-				</dict>
-			</dict>
-			<key>comment</key> <string>String literal</string>
-			<key>end</key>
-			<string>\'</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end</string>
-				</dict>
-			</dict>
+			<key>comment</key>
+			<string>Builtin waves</string>
+			<key>match</key>
+			<string>\b(int|array|float|char|boolean|string|free|new|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|multiset|sequence|function|relation|domain|codomain|size|sizeof|toInt|toFloat|toChar)\b</string>
 			<key>name</key>
-			<string>string.quoted.double</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>\\(\\|[abefnprtv'"?]|[0-3]\d{,2}|[4-7]\d?|x[a-fA-F0-9]{,2}|u[a-fA-F0-9]{,4}|U[a-fA-F0-9]{,8})</string>
-					<key>name</key>
-					<string>constant.character.escape</string>
-				</dict>
-			</array>
-			<key>string_escaped_char</key>
-			<false/>
+			<string>storage.type</string>
 		</dict>
+	  <dict>
+			<key>comment</key>
+			<string>Operator</string>
+			<key>match</key>
+			<string>([\/])</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+		
 		<dict>
 			<key>comment</key>
 			<string>Builtin waves</string>
 			<key>match</key>
-			<string>\b(int|array|float|char|boolean|string|free|new|write|writeln|true|false|otherwise|of|read|random|skip|abort|set|sequence|function|relation|tuple)\b</string>
+			<string>(⟦|⟧|)</string>
 			<key>name</key>
-			<string>storage.type</string>
+			<string>keyword</string>
 		</dict>
+
 		<dict>
 			<key>comment</key>
 			<string>Braces, brackets, parentheses...</string>
 			<key>match</key>
-			<string>([\(\)\{\}⟦⟧\[\]])</string>
+			<string>([\(\)\{\}\[\]])</string>
 			<key>name</key>
 			<string>punctuation.separator.parameters.c</string>
 		</dict>

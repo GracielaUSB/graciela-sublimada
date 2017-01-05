@@ -8,7 +8,7 @@ begin
 
 	{coupinv ${7:true} coupinv}
 
-	/* $1 procedures */
+	/* $1 procedures and functions */
 	${8: }
 end
 ]]></content>
