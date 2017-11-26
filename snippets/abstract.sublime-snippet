@@ -5,7 +5,7 @@ begin
 	/* $1 variables */
 	${3: }
 	
-	{inv ${4:true} inv}
+	{repinv ${4:true} repinv}
 
 	/* $1 procedures and functions */
 	${5: }
